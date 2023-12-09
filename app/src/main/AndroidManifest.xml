@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.zeinlibrary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:vmSafeMode="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ZeinLibrary"
+        tools:targetApi="31">
+        <activity
+            android:name=".DetailProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HapusActionBukuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HapusBukuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditInputBukuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditBukuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageAkunActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PembayaranDendaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PengembalianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PinjamBukuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditAkunActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TampilDendaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RiwayatPeminjamanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailBukuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DaftarBukuActvity"
+            android:exported="false" />
+        <activity
+            android:name=".TambahBukuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

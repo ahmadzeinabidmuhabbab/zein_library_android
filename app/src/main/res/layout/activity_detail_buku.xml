@@ -1,0 +1,285 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".DetailBukuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/foto"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/no_book"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/judul"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="40dp"
+            android:text="Buku Statistika Ria"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/foto"
+            app:layout_constraintStart_toStartOf="@id/foto"
+            app:layout_constraintTop_toBottomOf="@id/foto"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/white_background"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/judul">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_ISBN"
+                    android:layout_weight="1"
+                    android:text="ISBN"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ISBN"
+                    android:text="1234567889"
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:padding="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_penulis"
+                    android:layout_weight="1"
+                    android:text="Penulis"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/penulis"
+                    android:text="UN Department of Economic and Social Affairs"
+                    android:layout_weight="1"
+                    android:layout_marginStart="40dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:padding="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_penerbit"
+                    android:layout_weight="1"
+                    android:text="Penerbit"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/penerbit"
+                    android:text="Erlangga"
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:padding="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_bidang"
+                    android:layout_weight="1"
+                    android:text="Bidang"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bidang"
+                    android:text="Statistik"
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:padding="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_stok"
+                    android:layout_weight="1"
+                    android:text="Stok"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stok"
+                    android:text="10"
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_deskripsi"
+                    android:layout_weight="1"
+                    android:text="Deskripsi"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/lavender"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deskripsi"
+                    android:text="Buku ini terdiri dari tujuh Bab. Pada Bab pertama dipaparkan mengenai pendahuluan. Yang membahas mengenai sekilas sejarah R, R dan Markdown, Karakter R, Komunitas pengguna R, Kebiasaan yang Dianjurkan, Instal R dan RStudio dan Memulai R.
+
+Pada Bab kedua dipaparkan mengenai Statistika Deskriptif. Statistika Deskriptif adalah metode-metode yang berkaitan dengan pengumpulan dan penyajian suatu gugus data sehingga memberikan informasi yang berguna. Dua hal yang sangat penting dalam Statistika Deskriptif yaitu Ukuran Pemusatan, Penyebaran, dan Penyajian data.
+
+Pada Bab ketiga dipaparkan mengenai Uji Normalitas Dan Homogenitas. Sedangkan pada Bab keempat dipaparkan mengenai Uji Statistik T. Untuk membandingkan nilai tengah populasi dengan nilai tertentu atau dengan nilai tengah populasi lainnya bisa dilakukan dengan uji z. Namun uji z hanya bisa digunakan apabila data berdistribusi normal serta ragam populasi diketahui. Pada kenyataannya, jarang sekali kita bisa mengetahui nilai parameter suatu populasi dengan pasti, sehingga kita hanya bisa menduga parameter populasi tersebut dari sampel yang kita ambil. Pada Bab kelima, keenam dan ketujuh dipaparkan mengenai Anova, Korelasi dan Regresi."
+                    android:layout_weight="1"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
